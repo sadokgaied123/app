@@ -4,14 +4,14 @@
   tasks:
     - name: Pull the Docker image from DockerHub
       docker_image:
-        name: wajdimansour/myapp
+        name: sadokgaied/pipeline1
         tag: latest
         source: pull
 
     - name: Run the Docker container
       docker_container:
         name: myapp_container
-        image: sadokgaied/myapp:latest
+        image: sadokgaied/pipeline1:latest
         state: started
         ports:
           - "8080:8080"
