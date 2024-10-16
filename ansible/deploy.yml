@@ -11,7 +11,7 @@
     - name: Run the Docker container
       docker_container:
         name: myapp_container
-        image: wajdimansour/myapp:latest
+        image: sadokgaied/myapp:latest
         state: started
         ports:
           - "8080:8080"
